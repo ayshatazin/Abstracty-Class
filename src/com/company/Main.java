@@ -5,17 +5,20 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         Rattre rattre = new Rattre();
-        Tazin tazin = new Tazin();
-        Maftuha maftuha = new Maftuha();
 
+        Human onu = new Human() {
+            @Override
+            void works() {
+
+                System.out.println("clean");
+
+            }
+        };//object create
         rattre.sleep();
         rattre.works();
 
-        tazin.sleep();
-        tazin.works();
-
-        maftuha.sleep();
-        maftuha.works();
+        onu.sleep();
+        onu.works();
 
     }
 }
